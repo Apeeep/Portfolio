@@ -1,0 +1,30 @@
+@use './_colors.scss' as c;
+@use './_fonts.scss' as f;
+
+.navContainer {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+    align-items: center;
+    z-index: 9000;
+    top: 0;
+    transition: all 1s;
+
+    .linked {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: c.$darkblue-color;
+        gap: 20px;
+        filter: drop-shadow(0 0 2px c.$darkblue-color);
+        font-weight: bold;
+        font-size: 1.2rem;
+
+        .navAcc {
+            color: c.$white-color;
+        }
+    }
+}

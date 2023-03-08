@@ -1,10 +1,13 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App'
-import '../assets/index.css'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { ParallaxProvider } from "react-scroll-parallax";
+import "../assets/Style/index.scss";
+import App from "./App";
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-)
+    <ParallaxProvider>
+      <App />
+    </ParallaxProvider>
+  </React.StrictMode>
+);
